@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link"; // Import Link from next/link
 
-// Define the type for props
 type NavbarProps = {
   isScrolled: boolean;
 };
@@ -12,7 +12,6 @@ type NavbarProps = {
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle menu visibility
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -26,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo and Text */}
         <div className="flex items-center space-x-4">
-          <a href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/infinity-logo.png"
               alt="Company Logo"
@@ -42,29 +41,29 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 Quality is our specialty
               </span>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 text-sm text-black font-medium tracking-wide">
-          <a href="/" className="text-orange-600 hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="text-orange-600 hover:text-orange-600 transition-colors duration-200">
             HOME
-          </a>
-          <a href="/services" className="hover:text-orange-600 transition-colors duration-200">
+          </Link>
+          <Link href="/services" className="hover:text-orange-600 transition-colors duration-200">
             SERVICES
-          </a>
-          <a href="/projects" className="hover:text-orange-600 transition-colors duration-200">
+          </Link>
+          <Link href="/projects" className="hover:text-orange-600 transition-colors duration-200">
             PROJECTS
-          </a>
-          <a href="/blog" className="hover:text-orange-600 transition-colors duration-200">
+          </Link>
+          <Link href="/blog" className="hover:text-orange-600 transition-colors duration-200">
             BLOG
-          </a>
-          <a href="/gallery" className="hover:text-orange-600 transition-colors duration-200">
+          </Link>
+          <Link href="/gallery" className="hover:text-orange-600 transition-colors duration-200">
             GALLERY
-          </a>
-          <a href="/more" className="hover:text-orange-600 transition-colors duration-200">
+          </Link>
+          <Link href="/more" className="hover:text-orange-600 transition-colors duration-200">
             MORE
-          </a>
+          </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -81,24 +80,24 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-4 p-4 font-medium">
-            <a href="/" className="hover:text-blue-600 transition-colors duration-200">
+            <Link href="/" className="hover:text-blue-600 transition-colors duration-200">
               HOME
-            </a>
-            <a href="/services" className="hover:text-blue-600 transition-colors duration-200">
+            </Link>
+            <Link href="/services" className="hover:text-blue-600 transition-colors duration-200">
               SERVICES
-            </a>
-            <a href="/projects" className="hover:text-blue-600 transition-colors duration-200">
+            </Link>
+            <Link href="/projects" className="hover:text-blue-600 transition-colors duration-200">
               PROJECTS
-            </a>
-            <a href="/blog" className="hover:text-blue-600 transition-colors duration-200">
+            </Link>
+            <Link href="/blog" className="hover:text-blue-600 transition-colors duration-200">
               BLOG
-            </a>
-            <a href="/gallery" className="hover:text-blue-600 transition-colors duration-200">
+            </Link>
+            <Link href="/gallery" className="hover:text-blue-600 transition-colors duration-200">
               GALLERY
-            </a>
-            <a href="/contact" className="hover:text-blue-600 transition-colors duration-200">
+            </Link>
+            <Link href="/contact" className="hover:text-blue-600 transition-colors duration-200">
               CONTACT
-            </a>
+            </Link>
           </div>
         </div>
       )}
