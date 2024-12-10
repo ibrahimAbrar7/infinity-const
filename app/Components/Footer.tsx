@@ -17,27 +17,27 @@ const Footer: React.FC = () => {
               Infinity Construction NYC is a leading provider of quality restoration services in the tri-state area, and is a leading construction company.
             </p>
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="https://facebook.com/yourpage" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-orange-700 transition-colors"
                 aria-label="Facebook"
               >
                 <FaFacebookF />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/yourprofile" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-orange-500 transition-colors"
                 aria-label="Twitter"
               >
                 <FaXTwitter />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://youtube.com/yourchannel" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-red-700 transition-colors"
                 aria-label="YouTube"
               >
                 <FaYoutube />
-              </a>
+              </Link>
             </div>
           </div>
 

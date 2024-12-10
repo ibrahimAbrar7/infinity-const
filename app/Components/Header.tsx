@@ -14,11 +14,11 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4 md:w-5 md:h-5 text-white" />
-              <span><a href="tel:+13479395779">347-939-5779</a></span>
+              <span><Link href="tel:+13479395779">347-939-5779</Link></span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 md:w-5 md:h-5 text-white" />
-              <span><a href="mailto:infinityconstructionnyc@gmail.com">infinityconstructionnyc@gmail.com</a></span>
+              <span><Link href="mailto:infinityconstructionnyc@gmail.com">infinityconstructionnyc@gmail.com</Link></span>
             </div>
           </div>
 

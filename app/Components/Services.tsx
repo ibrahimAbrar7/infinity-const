@@ -48,6 +48,7 @@ const Services = () => {
                 width={500}
                 height={300}
                 className="w-full md:w-1/3 h-64 object-cover"
+                priority // If the image is above the fold, you can add priority
               />
               <div className="p-6 md:w-2/3">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
