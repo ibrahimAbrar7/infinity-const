@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link"; // Import Link from next/link for internal navigation
 import { FaFacebookF, FaYoutube, FaAngleRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -13,24 +14,27 @@ const Footer: React.FC = () => {
           <div>
             <h2 className="text-xl font-bold uppercase mb-4">About</h2>
             <p className="text-gray-600 mb-4">
-            Infinity Construction NYC is a leading provider of quality restoration services in the tri-state area, and is a leading construction company.
+              Infinity Construction NYC is a leading provider of quality restoration services in the tri-state area, and is a leading construction company.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://facebook.com/yourpage" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-orange-700 transition-colors"
+                aria-label="Facebook"
               >
                 <FaFacebookF />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/yourprofile" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-orange-500 transition-colors"
+                aria-label="Twitter"
               >
                 <FaXTwitter />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/yourchannel" // Replace with actual URL
                 className="text-white bg-black p-2 rounded-full hover:bg-red-700 transition-colors"
+                aria-label="YouTube"
               >
                 <FaYoutube />
               </a>
@@ -43,33 +47,33 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Masonry
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Masonry
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Masonry
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Masonry
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Paving
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Paving
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Stucco Work
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Stucco Work
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,29 +84,28 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Historical Landmarks Design Restoration
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Historical Landmarks Design Restoration
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Brownstone Restoration
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Brownstone Restoration
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Brownstone Facade Restoration
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Brownstone Facade Restoration
+                </Link>
               </li>
               <li className="flex items-center">
                 <FaAngleRight className="text-orange-600 mr-2" />
-                <a href="#" className="text-gray-600 hover:text-orange-600">
-                Brick Pointing
-                </a>
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
+                  Brick Pointing
+                </Link>
               </li>
-             
             </ul>
           </div>
 

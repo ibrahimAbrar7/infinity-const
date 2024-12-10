@@ -1,9 +1,8 @@
-"use client";
-
 import React from "react";
 import { Phone, Mail, MessageSquare } from "lucide-react"; // Icons from lucide-react
 import { FaFacebookF, FaYoutube } from "react-icons/fa"; // Social media icons from react-icons
 import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link"; // Import Link from next/link
 
 const Header = () => {
   return (
@@ -11,11 +10,11 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Parent Div */}
         <div className="w-full flex justify-center md:justify-between items-center text-white">
-        {/* Left Child Div - Phone and Mail */}
+          {/* Left Child Div - Phone and Mail */}
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4 md:w-5 md:h-5 text-white" />
-              <span><a href="tel:347-939-5779">347-939-5779</a></span>
+              <span><a href="tel:+13479395779">347-939-5779</a></span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 md:w-5 md:h-5 text-white" />
@@ -31,29 +30,29 @@ const Header = () => {
             </button>
             <div className="flex items-center space-x-3">
               {/* Facebook Icon */}
-              <a
-                href="/"
+              <Link
+                href="https://facebook.com/yourpage"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="Facebook"
               >
                 <FaFacebookF />
-              </a>
+              </Link>
               {/* Twitter Icon */}
-              <a
-                href="#"
+              <Link
+                href="https://twitter.com/yourprofile"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="Twitter"
               >
                 <FaXTwitter />
-              </a>
+              </Link>
               {/* YouTube Icon */}
-              <a
-                href="#"
+              <Link
+                href="https://youtube.com/yourchannel"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="YouTube"
               >
                 <FaYoutube />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

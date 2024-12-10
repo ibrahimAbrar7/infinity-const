@@ -12,6 +12,7 @@ type NavbarProps = {
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Toggle the visibility of the menu on mobile
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

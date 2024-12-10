@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { Link } from "lucide-react";
 
 const About: React.FC = () => {
   return (
@@ -24,12 +25,12 @@ const About: React.FC = () => {
               unwavering dedication to transforming ideas into reality. Our team
               is built on trust, collaboration, and precision.
             </p>
-            <a
+            <Link
               href="/services"
               className="inline-block px-6 py-3 bg-orange-500 text-white text-sm font-semibold rounded-md shadow-md hover:bg-blue-700 transition-all duration-300"
             >
               Learn More 
-            </a>
+            </Link>
           </div>
 
           {/* Image Section */}
