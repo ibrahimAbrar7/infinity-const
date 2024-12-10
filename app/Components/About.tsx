@@ -1,8 +1,7 @@
 "use client";
-
+import Link from "next/link"; // Import Link from next/link for internal navigation
 import React from "react";
 import Image from "next/image";
-import { Link } from "lucide-react";
 
 const About: React.FC = () => {
   return (

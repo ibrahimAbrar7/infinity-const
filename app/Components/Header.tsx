@@ -1,8 +1,8 @@
+import Link from "next/link"; // Import Link from next/link
 import React from "react";
 import { Phone, Mail, MessageSquare } from "lucide-react"; // Icons from lucide-react
 import { FaFacebookF, FaYoutube } from "react-icons/fa"; // Social media icons from react-icons
 import { FaXTwitter } from "react-icons/fa6";
-import Link from "next/link"; // Import Link from next/link
 
 const Header = () => {
   return (
@@ -14,11 +14,17 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4 md:w-5 md:h-5 text-white" />
-              <span><Link href="tel:+13479395779">347-939-5779</Link></span>
+              <span>
+                {/* Use <a> tag for tel link */}
+                <a href="tel:+13479395779">347-939-5779</a>
+              </span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 md:w-5 md:h-5 text-white" />
-              <span><Link href="mailto:infinityconstructionnyc@gmail.com">infinityconstructionnyc@gmail.com</Link></span>
+              <span>
+                {/* Use <a> tag for mailto link */}
+                <a href="mailto:infinityconstructionnyc@gmail.com">infinityconstructionnyc@gmail.com</a>
+              </span>
             </div>
           </div>
 
@@ -29,30 +35,36 @@ const Header = () => {
               <span>Request a Quote</span>
             </button>
             <div className="flex items-center space-x-3">
-              {/* Facebook Icon */}
-              <Link
+              {/* External links should use <a> tags */}
+              <a
                 href="https://facebook.com/yourpage"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaFacebookF />
-              </Link>
-              {/* Twitter Icon */}
-              <Link
+              </a>
+              {/* External links should use <a> tags */}
+              <a
                 href="https://twitter.com/yourprofile"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaXTwitter />
-              </Link>
-              {/* YouTube Icon */}
-              <Link
+              </a>
+              {/* External links should use <a> tags */}
+              <a
                 href="https://youtube.com/yourchannel"  // Replace with actual URL
                 className="text-black bg-white p-2 rounded-full hover:text-white hover:bg-black transition-colors"
                 aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaYoutube />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

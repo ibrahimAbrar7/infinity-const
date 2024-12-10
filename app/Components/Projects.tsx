@@ -1,11 +1,10 @@
 "use client";
-
+import Link from "next/link";
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay"; // Import the autoplay plugin
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Link from "next/link";
 import { slides } from "@/app/Data/websites-data";
 
 const Projects = () => {
